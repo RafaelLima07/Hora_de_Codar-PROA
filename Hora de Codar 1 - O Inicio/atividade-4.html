@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function inicio() {
+            var escolha = parseInt(prompt("Qual forma geométrica vc quer calcular a área: \n 1-Retângulo \n 2-Quadrado \n 3-Losângulo \n 4-Trapézio \n 5-Paralelograma \n 6-Triângulo \n 7-Circulo"));
+    
+            switch (escolha) {
+                case 1:
+                    retangulo_area();
+                    break;
+                case 2:
+                    quadrado_area();
+                    break;
+                case 3:
+                    losangulo_area();
+                    break;
+                case 4:
+                    trapezio_area();
+                    break;
+                case 5:
+                    paralelograma_area();
+                    break;
+                case 6:
+                    triangulo_area();
+                    break;
+                case 7:
+                    circulo_area();
+                    break;
+            }
+        }
+    
+        function retangulo_area() {
+            var retangulo_base = parseFloat(prompt("Escreva a base do retângulo: "));
+            var retangulo_altura = parseFloat(prompt("Escreva a altura do retângulo: "));
+    
+            alert(" A area do retângulo é " + retangulo_base * retangulo_altura);
+            inicio();
+        }
+    
+        function quadrado_area() {
+            var quadrado_lado = parseFloat(prompt("Escreva o lado do quadrado: "));
+    
+            alert("A area do quadrado é " + quadrado_lado ** 2);
+            inicio();
+        }
+    
+        function losangulo_area() {
+            var losangulo_diagonal_maior = parseFloat(prompt("Escreva a diagonal maior do losângulo : "));
+            var losangulo_diagonal_menor = parseFloat(prompt("Escreva a diagonal menor do losângulo: "));
+    
+            alert("A area do losangulo é " + (losangulo_diagonal_maior * losangulo_diagonal_menor) / 2);
+            inicio();
+        }
+    
+        function trapezio_area() {
+            var trapezio_base_maior = parseFloat(prompt("Escreva a base maior do trapézio: "));
+            var trapezio_base_menor = parseFloat(prompt("Escreva a base menor do trapézio: "));
+            var trapezio_altura = parseFloat(prompt("Escreva a altura do trapézio: "));
+    
+            alert("A area do trapézio é " + ((trapezio_base_maior + trapezio_base_menor) * trapezio_altura) / 2);
+            inicio();
+        }
+    
+        function paralelograma_area() {
+            var paralelograma_base = parseFloat(prompt("Escreva a base do paralelograma: "));
+            var paralelograma_altura = parseFloat(prompt("Escreva a altura do paralelograma: "));
+    
+            alert("A area do paralelograma é " + paralelograma_base * paralelograma_altura);
+            inicio();
+        }
+    
+        function triangulo_area() {
+            var triangulo_base = parseFloat(prompt("Escreva a base do triângulo "));
+            var triangulo_altura = parseFloat(prompt("Escreva a altura do triângulo: "));
+    
+            alert("A area do triângulo é " + (triangulo_base * triangulo_altura) / 2);
+            inicio();
+        }
+    
+        function circulo_area() {
+            var circulo_raio = parseFloat(prompt("Escreva o raio do circulo: "));
+    
+            alert("A area do circulo é " + Math.PI * (circulo_raio ** 2))
+            inicio();
+        }
+        inicio();
+    
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

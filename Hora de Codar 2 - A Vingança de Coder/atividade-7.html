@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <script>
+        var digitos = [];
+        var num72 = 0;
+       
+        for (var d = 0; d < 6; d++){
+            var digito = parseInt(prompt("Informe 6 digitos: "));
+            
+            digitos.push(digito);
+
+            if(digito < 72){
+                num72 += digito;
+            }
+        }
+        document.write("<h3> Resultado da soma dos digitos menores que 72: " + num72);
+        document.write("<h3> Digitos informados pelo usuário: " + digitos.join(", "));
+    </script>
+<body>
+    
+</body>
+</html>

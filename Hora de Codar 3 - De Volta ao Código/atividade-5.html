@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var num1 = parseInt(prompt("Digite um numero: "));
+        var num2 = parseInt(prompt("Digite outro numero: "));
+        var contador = 0
+        soma = 0
+        
+        if(num1 < num2){
+            while (num1 <= num2){
+            document.write ("<p> Numero: " + num1 );
+            soma = soma * num1;
+            num1++
+            contador++
+            }
+        } else {
+            alert("Programa falhou. O primeiro numero deve ser menor que o segundo!!! ");
+        }
+        document.write("<p> A média aritmética entre os numeros é: " + soma / contador);
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

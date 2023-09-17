@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var soma = 0;
+        var media = 0;
+    
+        for (var n = 0; n < 6; n++){
+            var nota = parseFloat(prompt("Informe as notas das avaliações do aluno: "));
+            
+            if (nota > 10){
+                alert("(Error: reinicie o programa) Somente valores de 1 a 10")
+            }
+            soma = soma + nota;
+            media = soma / 6; 
+        }     
+        document.write("<h2> A média do aluno é: " + media)
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

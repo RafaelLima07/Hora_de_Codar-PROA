@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var soma = 0;
+        var media = 0;
+        var contador = 0;
+       
+        function numeros(){
+            for (var d = 0; d < 4; d++){
+            var digito = parseInt(prompt("Informe 4 digitos: "));
+            
+            if(digito > 0 && digito < 10){
+                soma += digito;
+            }
+            }
+            
+            media = soma/4;
+            alert(media)
+
+            if(media >= 5 ){
+                alert("Você passou no teste")
+            } else {
+                alert("Tente novamente")
+                numeros();
+            }
+        }
+        numeros()
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        function inicio(){
+            var escolha = parseInt(prompt("Escolha: 1 - Mulher / 2 - homem"));
+
+            if (escolha === 1){
+                peso_ideal_mulher();
+            } else if (escolha === 2)
+                peso_ideal_homem();
+        }
+
+        function peso_ideal_mulher() {
+            var altura_mulher = parseFloat(prompt("Opção 1 - Informe á sua altura: "))
+            document.write(62.1 * altura_mulher) - 44.7  
+        }
+
+        function peso_ideal_homem() {
+            var altura_homem = parseFloat(prompt("Opção 2 - Informe á sua altura: "))
+            document.write(72.7 * altura_homem) - 58
+        }
+
+        inicio();
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

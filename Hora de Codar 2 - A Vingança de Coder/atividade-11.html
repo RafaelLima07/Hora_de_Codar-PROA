@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>   
+        var numero1 = parseInt(prompt("Digite um numero: "))
+        var numero2 = parseInt(prompt("Digite outro numero: "))
+
+        function inicio(){
+            var escolha = parseInt(prompt("Escolha: 1 - Adição / 2 - Subtração / 3 - Divisão / 4 - Multiplicação"));
+    
+            if (escolha === 1){
+                adicao();
+            } else if (escolha === 2){
+                subtacao();
+            } else if (escolha === 3){
+                divisao();
+            } else if (escolha === 4){
+                multiplicacao ();
+            }
+        }
+
+        function adicao(){
+            alert(numero1 + numero2)
+        }
+
+        function subtacao(){
+            alert(numero1 - numero2)
+        }
+
+        function divisao(){
+            alert(numero1 / numero2)
+        }
+
+        function subtracao(){
+            alert(numero1 * numero2)
+        }
+
+        inicio();
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

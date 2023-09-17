@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var alunosAprovados = 0; // Inicializa o contador de alunos aprovados
+        do {
+            var nota1 = parseFloat(prompt("Digite a primeira nota do aluno:"));
+            var nota2 = parseFloat(prompt("Digite a segunda nota do aluno:"));
+            var media = (nota1 + nota2) / 2;
+
+            if (media >= 9.5) {
+                alert("Aluno aprovado com média " + media.toFixed(2));
+                alunosAprovados++;
+            } else {
+                alert("Aluno reprovado com média " + media.toFixed(2));
+            }
+
+            var resposta = prompt("Calcular a média de outro aluno? (S/N)").toUpperCase();
+        } while (resposta === 'S');
+
+        alert("Quantidade de alunos aprovados: " + alunosAprovados);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
